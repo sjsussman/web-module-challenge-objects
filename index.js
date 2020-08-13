@@ -88,12 +88,10 @@ and should return a string in the format `{name} gave the restaurant a {rating},
 */
 
 
-function getReviewByIndex(arr, index) { 
 
-arr = arr[index];
+function getReviewByIndex(reviews, index) { 
 
-return arr.name + ' gave the restaurant a ' + arr.rating +' , and their feedback was: ' + arr.feedback;
-
+return `${reviews[index].name} gave the restaurant a ${reviews[index].rating}, and their feedback was: ${reviews[index].feedback}`
 }
 
 console.log(getReviewByIndex(reviews, 4));
